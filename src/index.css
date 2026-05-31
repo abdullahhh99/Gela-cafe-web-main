@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Mavel Text';
+  src: url('/fonts/MavelText-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Mavel Text", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+
+  --color-gela-green: #1A3626;
+  --color-gela-cream: #F5F2ED;
+  --color-gela-espresso: #2B1E16;
+  --color-gela-terracotta: #E35D2A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-gela-cream);
+  color: var(--color-gela-espresso);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-gela-green);
+  color: var(--color-gela-cream);
+}
